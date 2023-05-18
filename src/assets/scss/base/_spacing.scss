@@ -1,0 +1,83 @@
+$spacer: 1rem !default;
+$spacers: () !default;
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge((0: 0,
+    1: 4,
+    2: 8,
+    3: 12,
+    4: 16,
+    5: 24,
+    6: 32,
+    7: 120,
+  ),
+  $spacers);
+
+
+$spaceamounts: (1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+$sides: (all, x, y, tb, lr, top, bottom, left, right);
+
+@mixin make-space($prefix, $property) {
+  $property-prefix: #{str-slice($property, 0, 1)};
+
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+
+      @if $side == 'all' {
+        .#{$property-prefix}-#{$space} {
+          #{$property}: #{$space}rem !important;
+        }
+      } @else if $side == 'x' or $side == 'y' {
+        .#{$prefix}-#{$property-prefix}#{$side}-#{$space} {
+          @if $side == 'x' {
+            #{$property}-left: #{$space}rem !important;
+            #{$property}-right: #{$space}rem !important;
+          } @else {
+            #{$property}-top: #{$space}rem !important;
+            #{$property}-bottom: #{$space}rem !important;
+          }
+        }
+      } @else if $side == 'tb' {
+        .#{$property-prefix}#{$side}-#{$space} {
+          #{$property}-top: #{$space}rem !important;
+          #{$property}-bottom: #{$space}rem !important;
+        }
+      } @else if $side == 'lr' {
+        .#{$property-prefix}#{$side}-#{$space} {
+          #{$property}-left: #{$space}rem !important;
+          #{$property}-right: #{$space}rem !important;
+        }
+      } @else {
+        .#{$prefix}-#{$property-prefix}#{str-slice($side, 0, 1)}-#{$space} {
+          #{$property}-#{$side}: #{$space}rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $width5) {
+  @include make-space(xl, margin);
+  @include make-space(xl, padding);
+}
+
+@media (max-width: $width4) {
+  @include make-space(lg, margin);
+  @include make-space(lg, padding);
+}
+
+@media (max-width: $width3) {
+  @include make-space(md, margin);
+  @include make-space(md, padding);
+}
+
+@media (max-width: $width2) {
+  @include make-space(sm, margin);
+  @include make-space(sm, padding);
+}
+
+@media (max-width: $width1) {
+  @include make-space(xs, margin);
+  @include make-space(xs, padding);
+}
+

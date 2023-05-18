@@ -1,0 +1,46 @@
+
+
+
+// Base 
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+
+@import 'layout/flex';
+@import 'layout/flexgrid';
+@import 'utilities/display';
+
+@import 'base/typography';
+@import 'base/spacing';
+@import 'base/breakpoint';
+@import 'base/media';
+
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/hero';
+
+@import 'components/solutions';
+@import 'components/features';
+@import 'components/technology';
+@import 'components/ourstory';
+
+
+@import 'features';
+@import 'ces';
+@import 'contact';
+@import 'about';
+@import 'blog';
+@import 'blog-detail';
+
+
+//Vendor
+@import 'vendors/slick-min';
+@import 'vendors/slick';
+
+
+@import 'components/footer';
+
+@import 'base/ipadair';
+

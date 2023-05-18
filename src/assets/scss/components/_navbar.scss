@@ -1,0 +1,112 @@
+
+.aside-nav{
+  background-color: #ffffff;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+      color: #ffffff;
+      background-color: #004765;
+      .icon-h{
+          display: inline;
+      }
+
+      
+
+  }
+
+  .nav-link{
+
+    .active{
+      color: #ffffff;
+      background-color: #004765;
+     }
+      .btn-nav_icon{
+          width: 26px;
+          height: 26px;
+          position: relative;
+          display: inline-block;
+    
+          img{
+            width: 100%;
+            height: auto;
+          }
+    
+          .icon-h{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+         }
+
+         &:hover{
+          background-color: #004765;
+          .btn-nav_icon{
+              &.btn-nav_icon{
+                  .icon-h{
+                      display: inline;
+                  }
+              }
+          }
+     }
+
+  }
+
+  
+}
+/*
+.tooltip {
+  background-color: transparent;
+}
+
+.tooltip .tooltip-arrow::before {
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.tooltip .tooltip-inner {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+*/
+.tooltip {
+  
+}
+.active.tooltip {
+  display: none !important;
+}
+
+.tooltip-inner {
+  background-color: #004765;
+  box-shadow: 0px 0px 4px rgba(183,184,185,0.15);
+  opacity: 1 !important;
+  font-size: 16px;
+  border-radius: 0.2rem;
+
+}
+
+.bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
+  border-top-color: #004765;
+}
+.bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
+  border-right-color: #004765;
+}
+.bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
+  border-bottom-color: #004765;
+}
+.bs-tooltip-start .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
+  border-left-color: #004765;
+}
+
+

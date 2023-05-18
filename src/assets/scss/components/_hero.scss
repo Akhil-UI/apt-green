@@ -1,0 +1,268 @@
+
+.hero_section{
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  
+
+  .social_icons{
+    display: inline-flex;
+    flex-direction: column;
+    padding-left:5rem;
+
+    ul{
+    list-style: none;
+
+        li{
+          margin: 4rem 0;
+
+          img{
+            height: auto;
+          }
+        }
+    }
+
+    @include media("<=tablet") {
+      padding-left: 1rem;
+    }
+
+  }
+  
+  .slide{
+    display:none;
+  }
+
+  .slide:first-child{
+    display:grid;
+  }
+
+  .banner-content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: $color-white;
+    position: relative;
+    margin: 0 auto;
+
+
+    .text_block{
+
+      grid-row: 1;
+      grid-column: 1/span 2;
+
+      @include media("<=600px") {
+        grid-column: 1/span 5;
+      }
+
+      .hero_title{
+        margin-bottom: 4rem;
+  
+      }
+      .hero_subtitle{
+        margin-bottom: 10rem;
+        line-height: 1.5;
+        width:100%;
+        max-width: 450px;
+
+      }
+
+      .call_detals{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding-top:15rem;
+      }
+
+      @include media("<=tablet") {
+        padding-left: 1rem;
+        margin-top: 2.5rem;
+
+        .hero_title{
+          margin-bottom: 1.6rem;
+        }
+
+        .hero_subtitle {
+          margin-bottom: 1.6rem;
+        }
+
+        .call_detals {
+          padding-top: 1.6rem;
+        }
+      
+      }
+
+      @include media("<=996px") {
+        padding-left: 1rem;
+      }
+    
+    }
+    .img-slider{
+
+      grid-row: 1;
+      grid-column: 3/span 4;
+
+  
+
+      .img_res{
+        width:100%;
+        height: auto;
+        border-radius: 13px;
+        position: relative;
+        z-index: -1;
+
+        img{
+          border-radius: 13px;
+          
+
+        }
+
+        @include media("<=375px") {
+          opacity: 0.5;
+        }
+    }
+
+    }
+
+
+
+  }
+
+  .carousel_nav{
+    position: relative;
+    z-index: 5;
+    width: 30px;
+    height: 100%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: 2rem;
+    
+    .indicator{
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          border: 1px solid #000;
+          display: block;
+          margin: 1.6rem 0 ;
+          cursor: pointer;
+          outline: none;
+          border: 0;
+          position: relative;
+          background-color: #bebec4;
+
+         
+          
+          &_active{
+            background-color: $bg-primary;
+          
+            &::before{
+              content: "";
+              height: 22px;
+              width: 22px;
+              border-radius: 50%;
+              background-color: transparent;
+              border: 1px solid #061528;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: -1;
+            }
+          }
+          &_disable{
+            background-color: #bebec4;
+          }
+    }
+
+    .active{
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          border: 1px solid #000;
+          display: block;
+          margin: 1.6rem 0 ;
+          cursor: pointer;
+          outline: none;
+          border: 0;
+          position: relative;
+          background-color: $bg-primary;
+          
+          &::before{
+            content: "";
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #061528;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+          }
+    }
+
+  }
+
+  .carousel-control{
+    padding-top: 2.2rem;
+    padding-right: 6.4rem;
+
+    .navgation{
+        width: 60px;
+        height: 60px;
+        border-radius: .8rem;
+        background-color: #ffffff;
+        border: 1px solid #061528;
+        margin: 1rem;
+        text-align: center;
+      
+
+        svg{
+          width:35px;
+          fill:#0b192c;
+          margin-top: 2px;
+        }
+
+        &:hover{
+          background-color: $bg-primary;
+          border: 1px solid $bg-primary;
+          cursor: pointer;
+          svg{
+            fill:#ffffff;
+          }
+        }
+        
+    }
+
+
+    @include media("<=tablet") {
+      padding-top: 3rem;
+      padding-right: 3rem;
+      
+      .navgation{
+        width: 35px;
+        height: 35px;
+        background-color: $color-white;
+
+        svg{
+          width:23px;
+        }
+      }
+
+
+    }
+    @include media("<=tablet") {
+      .md-center{
+      justify-content: center;
+      }
+    }
+    
+
+  
+  
+  }
+
+
+
+}
+

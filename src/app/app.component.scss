@@ -1,0 +1,16 @@
+main{
+   
+    height: 100%;
+    padding-left: 5.5rem;
+    padding-right: 1rem;
+    height: calc(100vh - 95px);
+    overflow: hidden;
+
+    .content-wrapper{
+        background-color: #ffffff;
+        border-radius: 0.25rem;
+        height: 100%;
+        overflow: auto;
+    }
+}
+

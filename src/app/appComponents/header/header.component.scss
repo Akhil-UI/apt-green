@@ -1,0 +1,74 @@
+
+
+header{
+    background-color: #ffffff;
+
+    .navbar-logo{
+        width:80%;
+        padding-left: 4.5rem;
+    }
+    .nav-cnt{
+        margin: 1px 0;
+    }
+}
+
+// .main-link{
+//     text-align: right;
+//     background-color: #000;
+//     color: #ffffff;
+//     position: relative;
+//     border: 0;
+//     border-radius: 0;
+//     text-decoration: none;
+//     display: inline-block;
+//     padding: 2rem 2.5rem;
+    
+
+//     &::before{
+//         content: "";
+//         clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 50%);
+//         background-color: #000;
+//         top: 0;
+//         left: -12%;
+//         position: absolute;
+//         z-index: -1;
+//         width: 25px;
+//         height: 100%;
+       
+//     }
+//     &::after{
+//         content: "";
+//         clip-path: polygon(0% 0%, 0% 0%, 100% 50%, 0% 100%, 0% 100%);
+//         background-color: #000;
+//         top:0;
+//         right: -12%;
+//         position: absolute;
+//         z-index: -1;
+//         width: 25px;
+//         height: 100%;
+        
+//     }
+// }
+
+
+// .main-btn2{
+//     color:#ffffff;
+//     position: relative;
+
+//     .main-btn2-in{
+//         display: block;
+//         background-color: #000;
+//     }
+
+//     &::before{
+//         content: "";
+//         clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 50%);
+//         background-color: red;
+//         position: absolute;
+//         top:0%;
+//         left:0%;
+//         width: 25px;
+//         height: 100%;
+//     }
+
+// }

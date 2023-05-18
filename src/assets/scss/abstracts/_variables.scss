@@ -1,0 +1,164 @@
+// Global Colors
+$bg-primary: #ee4136;
+$bg-primary-dark: #000f22;
+$bg-secondaray: #b5ced0;
+
+$color-primary: #ee4136;
+$color-primary-dark: #000f22;
+$color-secondaray: #b5ced0;
+
+// Font 
+$custom-font-family:'Gotham', sans-serif;
+//$headings-font-family:Albra-Semi;
+
+$font-weight-regular:normal;
+
+$unit-base-size:10px;
+$font-size-base:1.6rem;
+
+$color-primary:#ef4136;
+$color-white:#ffffff;
+$color-black:#000000;
+$color-solution:#136b6b;
+$color-gray:#717788;
+
+$fsize16:1.6rem;
+$fsize18:1.8rem;
+$fsize21:2.1rem;
+$fsize25:2.5rem;
+$fsize30:3rem;
+$fsize32:3.2rem;
+$fsize60:6rem;
+$fsize68:6.8rem;
+
+$letstalk-padding: 3rem 6.3rem;
+
+// Screen Variants
+$width1: 768px;
+$width2: 1024px;
+$width3: 1440px;
+$width4: 1680px;
+$width5: 2560px;
+
+// Small 786 
+$sm-font-size:1.4rem;
+$sm-line-height:2.2rem;
+$sm-section-spacing:20rem;
+$sm-header-para: 3rem;
+  // Heading 
+  $sm-h1:3.2rem;
+  $sm-h2:2.8rem;
+  $sm-h3:2.0rem;
+  $sm-h4:1.8rem;
+  $sm-h5:1.6rem;
+  $sm-h6:1.6rem;
+  // Heading Line Height 
+  $sm-h1-line-height:4.2rem;
+  $sm-h2-line-height:3.4rem;
+  $sm-h3-line-height:2.8rem;
+  $sm-h4-line-height:2.4rem;
+  $sm-h5-line-height:2.4rem;
+  $sm-h6-line-height:2.4rem;
+
+// Medium 1024 
+$md-font-size:1.8rem;
+$md-line-height:2.6rem;
+$md-section-spacing:20rem;
+$md-header-para: 3rem;
+  // Heading 
+  $md-h1:4.8rem;
+  $md-h2:4.2rem;
+  $md-h3:2.8rem;
+  $md-h4:2.2rem;
+  $md-h5:1.6rem;
+  $md-h6:1.6rem;
+  // Heading Line Height 
+  $md-h1-line-height:6.2rem;
+  $md-h2-line-height:4.4rem;
+  $md-h3-line-height:3.4rem;
+  $md-h4-line-height:2.8rem;
+  $md-h5-line-height:2.2rem;
+  $md-h6-line-height:2.2rem;
+
+// Large 1440 
+$lg-font-size:1.8rem;
+$lg-line-height:2.8rem;
+$lg-section-spacing:20rem;
+$lg-header-para: 3rem;
+  // Heading 
+  $lg-h1:4.8rem;
+  $lg-h2:4.2rem;
+  $lg-h3:2.8rem;
+  $lg-h4:2.2rem;
+  $lg-h5:1.6rem;
+  $lg-h6:1.6rem;
+  // Heading Line Height 
+  $lg-h1-line-height:6.2rem;
+  $lg-h2-line-height:4.4rem;
+  $lg-h3-line-height:3.4rem;
+  $lg-h4-line-height:2.8rem;
+  $lg-h5-line-height:2.2rem;
+  $lg-h6-line-height:2.2rem;
+ 
+// Xtra Large 1680 
+$xl-font-size:2.1rem;
+$xl-line-height:3.3rem;
+$xl-section-spacing:20rem;
+$xl-header-para: 3rem;
+  // Heading 
+  $xl-h1:6.2rem;
+  $xl-h2:5.4rem;
+  $xl-h3:3.2rem;
+  $xl-h4:2.8rem;
+  $xl-h5:1.8rem;
+  $xl-h6:1.6rem;
+  // Heading Line Height 
+  $xl-h1-line-height:7.9rem;
+  $xl-h2-line-height:7.9rem;
+  $xl-h3-line-height:4.9rem;
+  $xl-h4-line-height:3.5rem;
+  $xl-h5-line-height:3.0rem;
+  $xl-h6-line-height:2.2rem;
+
+// HD 1920 
+$hd-font-size:2.1rem;
+$hd-line-height:3.3rem;
+$hd-line-height:3.3rem;
+$hd-section-spacing:20rem;
+$hd-header-para: 3rem;
+  // Heading 
+  $hd-h1:6.8rem;
+  $hd-h2:6.0rem;
+  $hd-h3:3.2rem;
+  $hd-h4:2.8rem;
+  $hd-h5:1.8rem;
+  $hd-h6:1.6rem;
+  // Heading Line Height 
+  $hd-h1-line-height:7.9rem;
+  $hd-h2-line-height:7.9rem;
+  $hd-h3-line-height:4.9rem;
+  $hd-h4-line-height:3.5rem;
+  $hd-h5-line-height:3.0rem;
+  $hd-h6-line-height:2.2rem;
+
+
+
+// Flex
+
+
+// Spacing increments
+$spacing-increments: 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 !default;
+
+// Breakpoints
+$breakpoint-small: 412px !default;
+$breakpoint-medium: 768px !default;
+$breakpoint-large: 1024px !default;
+
+$breakpoints: (
+  small: $breakpoint-small,
+  medium: $breakpoint-medium,
+  large: $breakpoint-large
+) !default;
+  
+// Display options
+$display-options: block, inline-block, none, flex, inline-flex !default;

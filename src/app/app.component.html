@@ -1,0 +1,13 @@
+<ng-container *ng ngIf="hideSection">
+<app-header></app-header>
+<app-navbar-aside></app-navbar-aside>
+<main >
+    <div class="container-fluid content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+</main>
+</ng-container>
+
+<ng-container *ngIf="hidedashboard">
+<app-splash-screen></app-splash-screen>
+</ng-container>

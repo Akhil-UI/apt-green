@@ -1,0 +1,99 @@
+
+.btn {
+  padding: 18px 40px;
+  font-family: $custom-font-family;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  border: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  @include radius3;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+    border: none;
+   
+  }
+
+  @media (max-width: $width3) {
+    padding: 12px 30px;
+ 
+  }
+
+  &.btn-primary {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      border: none;
+    }
+
+  
+    &.disabled {
+      background: $color-gray;
+      border-color: $color-gray;
+      pointer-events: none;
+    }
+  }
+
+  &.btn-black{
+    background-color: #000f23;
+    color: $color-white;
+    border: none;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      border: none;
+    }
+
+  
+    &.disabled {
+      background: $color-gray;
+      border-color: $color-gray;
+      pointer-events: none;
+    }
+
+  }
+
+  &.btn-comment{
+      color: #010000;
+      font-size: 18px;
+      border: 1px solid #010000;
+      width:100%;
+      border-radius: 0;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #010000;
+        border: 1px solid #010000;
+      }
+      
+
+  }
+
+  
+}
+
+.btn-text{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ef4136;
+    font-weight: 700;
+    letter-spacing: 1px;
+}   

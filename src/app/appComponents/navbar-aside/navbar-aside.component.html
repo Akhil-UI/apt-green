@@ -1,0 +1,165 @@
+
+<div class="d-flex flex-column flex-shrink-0 aside-nav" style="width: 4.5rem;">
+ 
+    <button class="btn-icon" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon class="menu-icon">menu</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu" [overlapTrigger]="true" [hasBackdrop]="false" class="menu">
+
+      <mat-icon class="menu-icon">close</mat-icon>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/employee" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> Employee Data 
+            <!--<img src="../assets/img/icon-ed.png" alt="" class="icon">-->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/performance" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Performance Review</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/trainings" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Trainings</a>
+        </li>
+        <li class="nav-item" routerLink="/hierarchical" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Hierarchical Org Structure</a>
+        </li>
+        <li class="nav-item" routerLink="/escalation" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Escalation Hierarchy</a>
+        </li>
+        <li class="nav-item" routerLink="/holiday" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link ">Holiday Calendar</a>
+        </li>
+        <li class="nav-item" routerLink="/referral" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Referral Bonuses</a>
+        </li>
+        <li class="nav-item" routerLink="/background" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Background Check Services</a>
+        </li>
+        <li class="nav-item" routerLink="/aptitude" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Aptitude Test</a>
+        </li>
+        <li class="nav-item" routerLink="/hanadbook" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Hanadbook</a>
+        </li>
+        <li class="nav-item" routerLink="/forms" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Forms</a>
+        </li>
+        <li class="nav-item" routerLink="/birthdays" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link">Birthdays</a>
+        </li>
+      </ul>
+    </mat-menu>
+    
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center nav-tooltip">
+      <li class="nav-item">
+        <a routerLink="/employee" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-top border-bottom rounded-0" aria-current="page" title="Employee Data" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-ed.png" alt="">
+                <img src="../assets/img/icon-ed_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/performance"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" title="Performance Review" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-pr.png" alt="">
+                <img src="../assets/img/icon-pr_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/trainings" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" title="Trainings" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-t.png" alt="">
+                <img src="../assets/img/icon-t_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/hierarchical" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Hierarchical Org Structure" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-hos.png" alt="">
+                <img src="../assets/img/icon-hos_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/escalation" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Escalation Hierarchy" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-eh.png" alt="">
+                <img src="../assets/img/icon-eh_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/holiday" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Holiday Calendar" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-hc.png" alt="">
+                <img src="../assets/img/icon-hc_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/referral" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Referral Bonuses" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-rb.png" alt="">
+                <img src="../assets/img/icon-rb_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/background" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Background Check Services" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-bcs.png" alt="">
+                <img src="../assets/img/icon-bcs_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/aptitude" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Aptitude Test" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-at.png" alt="">
+                <img src="../assets/img/icon-at_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/hanadbook" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Hanadbook" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-hb.png" alt="">
+                <img src="../assets/img/icon-hb_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/forms" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Forms" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-f.png" alt="">
+                <img src="../assets/img/icon-f_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/birthdays" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link py-2 border-bottom rounded-0" class="nav-link py-2 border-bottom rounded-0" title="Birthdays" data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="btn-nav_icon">
+                <img src="../assets/img/icon-bd.png" alt="">
+                <img src="../assets/img/icon-bd_h.png" class="icon-h">
+            </span>
+        </a>
+      </li>
+    </ul>
+    <!-- <div class="dropdown border-top">
+      <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+      </a>
+      <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+    -->
+  </div>
+
